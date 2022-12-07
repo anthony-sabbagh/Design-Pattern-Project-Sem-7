@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE6CD7FB-D018-4025-9495-28F8A64738D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract_Factory_Pattern\Abstract_Factory\ILaptopFactory.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Abstract_Product\LaptopFactory.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Factories\HP_Factory.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Factories\Lenovo_Factory.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Products\HP_15t-DW300-1B9N3AV-6-CHB.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Products\IdeaPad_Gaming_3_82K200URUS.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Products\Lenovo_IP5-82FG00S9AX.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Products\Lenovo_V15-82KB003LIX.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Products\ProBook_450_G95Y3T4EA.cs" />
+    <Compile Include="Abstract_Factory_Pattern\Concrete_Products\Victus_Gaming_15-FA0032DX.cs" />
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decorator_Pattern\Component_Base\SSD.cs" />
+    <Compile Include="Decorator_Pattern\Concrete_Component\Kingston 240Gb.cs" />
+    <Compile Include="Decorator_Pattern\Concrete_Component\Kingston 480Gb.cs" />
+    <Compile Include="Decorator_Pattern\Concrete_Component\Kingston 960Gb.cs" />
+    <Compile Include="Decorator_Pattern\Concrete_Decorators\2.5_USB3.0.cs" />
+    <Compile Include="Decorator_Pattern\Concrete_Decorators\ED600.cs" />
+    <Compile Include="Decorator_Pattern\Concrete_Decorators\XPG_EX500.cs" />
+    <Compile Include="Decorator_Pattern\Decorator_Base\Enclosure.cs" />
+    <Compile Include="ChangeUsername.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeUsername.Designer.cs">
+      <DependentUpon>ChangeUsername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laptop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laptop.Designer.cs">
+      <DependentUpon>Laptop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memento_Pattern\Caretaker\PersonCaretaker.cs" />
+    <Compile Include="Memento_Pattern\Memento\PersonMemento.cs" />
+    <Compile Include="Memento_Pattern\Originator\Person.cs" />
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SSDForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSDForm1.Designer.cs">
+      <DependentUpon>SSDForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusCheck.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeUsername.resx">
+      <DependentUpon>ChangeUsername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laptop.resx">
+      <DependentUpon>Laptop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSDForm1.resx">
+      <DependentUpon>SSDForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
